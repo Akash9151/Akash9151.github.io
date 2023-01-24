@@ -3,13 +3,13 @@
 
 # Uncomment and set the URL of your site (with protocol, e.g. `https://`)
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-# url:                   https://username.github.io
+url:                   https://akashkashyap.in/
 
 # Uncomment and set the "base URL" of your site.
 # When your site is in a subdirectory, set to `/<name of directory>`,
 # with a leading `/` but no trailing `/`. Use the empty string '' otherwise.
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-# baseurl:               '/hydejack-starter-kit'
+baseurl:               ''
 
 
 # General settings
@@ -20,16 +20,16 @@
 lang:                  en
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Starter Kit
+title:                 Akash Kashyap
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Hydejack is a boutique Jekyll theme for hackers, nerds, and academics,
-  with a focus on personal sites that are meant to impress.
+  I'm an Android developer with experience of Flutter Hybrid Development. I like to explore new
+    technology and learn new skills. I'm good at planning things and solving complex problems.
 
 # A shorter description for the sidebar.
-tagline:               Change `tagline` in `_config.yml`
+tagline:               Android & Flutter Developer
 
 # A list of keywords for your blog
 keywords:              []
@@ -37,13 +37,13 @@ keywords:              []
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/img/logo.png
+logo:                  /assets/img/profile_picture.jpeg
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:
-  name:                <firstname> <lastname>
-  email:               <mail@domain.tld>
+  name:                Akash Kashyap
+  email:               kashyapakash167@gmail.com
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
@@ -51,6 +51,10 @@ author:
 menu:
   - title:             Example
     url:               /example/
+  - title:             Android
+    url:               /android/
+  - title:             Flutter
+    url:               /flutter/
   - title:             Documentation
     url:               /docs/
   - title:             About
@@ -58,16 +62,9 @@ menu:
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
-legal:
-  - title:             LICENSE
-    url:               /LICENSE/
-  - title:             NOTICE
-    url:               /NOTICE/
-  - title:             CHANGELOG
-    url:               /CHANGELOG/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2021. All rights reserved.
+copyright:             © 2023 Akash Kashyap. All rights reserved.
 
 # Format of the permalinks
 permalink:             /:categories/:year-:month-:day-:title/
@@ -80,16 +77,17 @@ paginate_path:         /:num/
 # Theme
 # ---------------------------------------------------------------------------------------
 
-# theme: jekyll-theme-hydejack
-remote_theme: hydecorp/hydejack@v9
+theme: jekyll-theme-hydejack
+# remote_theme: hydecorp/hydejack@v9
 
 
 # Customizaton
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/sidebar-bg.jpg
+accent_image:          /assets/img/side-bar-bg.jpeg
 accent_color:          rgb(79,177,186)
+invert_sidebar: true
 
 # This is used for the `theme-color` meta tag,
 # which changes the background color of the browser UI in certain browsers.
@@ -127,12 +125,6 @@ defaults:
   - scope:
       path:            assets/
     values:
-      sitemap:         false
-
-  - scope:
-      path:            licenses/
-    values:
-      layout:          plain
       sitemap:         false
 
   # # You can use the following to enable comments on all posts.
@@ -196,15 +188,15 @@ hydejack:
   no_mark_external:    false
 
   # Set to `true` if third party plugins fail to work with dynamically loaded pages
-  no_push_state:       false
+  no_push_state:       true
 
   # Set to `true` if you want to disable the drawer
-  no_drawer:           false
+  no_drawer:           true
 
   # Set to `true` if you don't to use the auto-hiding (JavaScript based) navbar.
   # Note that this will not hide the navbar completely, only replace it with a static one.
   # Use custom css to hide completely, e.g. `#_navbar { display: none }`.
-  no_navbar:           false
+  no_navbar:           true
 
   # Set to true to disable the built-in search functionality.
   # Note that search is disabled during local use to save on build time.
@@ -254,7 +246,7 @@ hydejack:
 
   # Set to `true` if you would like to add a "Powered by Hydejack" link in the footer.
   # Note that this setting has no effect when using the free version.
-  advertise:           false
+  advertise:           true
 
   # Buyers of the PRO version can opt to hide all dates from the theme.
   # Frequent consumers of online content will know that nothing devalues a post like
@@ -315,7 +307,6 @@ exclude:
   - Gemfile.lock
 include:
   - .well-known
-  - LICENSE.md
 
 
 # Plugins
